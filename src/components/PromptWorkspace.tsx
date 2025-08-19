@@ -9,8 +9,6 @@ interface PromptWorkspaceProps {
 
 const PromptWorkspace: React.FC<PromptWorkspaceProps> = ({
   showWorkspace,
-  activePrompt,
-  setActivePrompt,
 }) => {
   if (!showWorkspace) return null;
 

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, Send, Shield, Skull, Terminal } from 'lucide-react';
+import { Send, Shield, Skull, Terminal } from 'lucide-react';
 import ChatMessage from './components/ChatMessage';
 import PromptWorkspace from './components/PromptWorkspace';
 import { Message, PromptTemplate } from './types';
