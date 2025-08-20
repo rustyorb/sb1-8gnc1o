@@ -2,7 +2,11 @@ import React from 'react';
 import { Bot, User } from 'lucide-react';
 import { Message } from '../types';
 
-interface ChatMessageProps extends Message {}
+interface ChatMessageProps {
+  role: Message['role'];
+  content: Message['content'];
+  type?: Message['type'];
+}
 
 const ChatMessage: React.FC<ChatMessageProps> = ({ role, content, type }) => {
   const isSystem = type === 'system';
